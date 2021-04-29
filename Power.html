@@ -1,7 +1,8 @@
 <!Doctype html>
 <html>
     <head>
-        <title>Percentage</title>        
+        <title>Prime Number</title>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -58,32 +59,31 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="PTR.html">Simple Interest</a>
-                    </li> 
+                    </li>  
                     <li class="nav-item">
                       <a class="nav-link" href="All.html">Check your Number</a>
-                    </li>    
+                    </li>   
                     <li class="nav-item">
-                      <a class="nav-link" href="Power.html">Power</a>
-                    </li>             
+                        <a class="nav-link" href="Power.html">Power</a>
+                      </li>              
                   </ul>
                 </div>
-            </nav>   
-            <p class="text-center" style="font-size: 25px; color: white; margin-top: 100px;"><b>Check your Grade/Percentage</b></p>
+            </nav>  
+            <p class=" " style="color: white; font-size: 25px; margin-top: 100px;"><b>Power of a Number</b></p>
             <div class="form-group d-flex justify-content-center align-items-center">                
-                <form onsubmit="return grade()">                        
-                    <input type="text" id="mat" class="form-control" placeholder="Enter your Math mark" max="100" min="0" style="width: 300px;" required>
-                    <input type="text" id="engli" class="form-control mt-3" placeholder="Enter your English mark" max="100" min="0" style="width: 300px;" required>
-                    <input type="text" id="sci" class="form-control mt-3" placeholder="Enter your Science mark" max="100" min="0" style="width: 300px;" required>
-                    <button type="submit" class="btn btn-info mt-4" >Check</button>
-                    <input type="text" class="form-control mt-3" name="display" placeholder="Your percentage" style="width: 300px;" disabled>
-                    <div class="text-center mt-4" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder; color: white;">
+                <form onsubmit="return powerNumber()">                        
+                    <input type="text" id="bas" class="form-control mt-2 " placeholder="Enter base" style="width: 250px;" required>                        
+                    <input type="text" id="exp" class="form-control mt-2 " placeholder="Enter exponent" style="width: 250px;" required>                        
+                    <button type="submit" class="btn btn-info mt-4">Submit</button>                        
+                    <div class=" text-light mt-4 " style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">
                         <p id="result"></p>
                     </div>
                 </form>
             </div>
         </div>
         
-        <script src="./percentage.js">
+        
+        <script src="./power.js">
             
         </script>
 
