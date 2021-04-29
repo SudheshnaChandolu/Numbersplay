@@ -1,7 +1,8 @@
 <!Doctype html>
 <html>
     <head>
-        <title>Simple Interest</title>        
+        <title>Amstrong Number</title>
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -10,7 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <style>
-       body{
+        body{
             background-color: black;
         }
         .footer {
@@ -58,35 +59,36 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="PTR.html">Simple Interest</a>
-                    </li>             
+                    </li>  
                     <li class="nav-item">
                       <a class="nav-link" href="All.html">Check your Number</a>
                     </li>   
                     <li class="nav-item">
-                      <a class="nav-link" href="Power.html">Power</a>
-                    </li>  
+                        <a class="nav-link" href="Power.html">Power</a>
+                    </li> 
                     <li class="nav-item">
-                      <a class="nav-link" href="Amstrong.html">Amstrong </a>
-                  </li> 
+                        <a class="nav-link" href="Amstrong.html">Amstrong </a>
+                    </li>               
                   </ul>
                 </div>
             </nav>  
-            <p class="" style="color: white; font-size: 25px; margin-top: 100px;"><b>Simple Interest Calculator</b></p>
+            <p class=" " style="color: white; font-size: 25px; margin-top: 100px;"><b>Amstrong Number</b></p>
             <div class="form-group d-flex justify-content-center align-items-center">                
-                <form onsubmit="return interest()">                        
-                    <input type="text" id="pri" class="form-control mt-3 d-md-inline-flex" placeholder="Enter principal" style="width: 250px;" required>
-                    <input type="text" id="rate" class="form-control mt-3" placeholder="Enter Rate of Interest"  required>
-                    <input type="text" id="time" class="form-control mt-3" placeholder="Enter Time period in years"  required>
-                    <button type="submit" class="btn btn-info mt-4" >Submit</button>
-                    <div class="text-center text-light mt-4">
+                <form onsubmit="return amstrongNumber()">                        
+                    <input type="number" id="ams" class="form-control mt-2 " placeholder="Enter your number" style="width: 270px;"  min="100" max="999">                        
+                    <button type="submit" class="btn btn-info mt-4">Check</button>                        
+                    <div class=" text-light mt-4 " style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">
                         <p id="result"></p>
                     </div>
                 </form>
             </div>
-            <script src="./ptr.js"> 
-
-            </script>
         </div>
+        
+        
+        <script src="./amstrong.js">
+            
+        </script>
+
         <div class="footer">
           <p style="font-size: 20px;" class="back"><i>Numbers Play</i></p>
             <p style="font-size: small;"><i>© Copyright 2021. All rights reserved.</i></p>
